@@ -1,0 +1,152 @@
+:root {
+  margin: 0;
+  font-size: 14px;
+}
+
+.body {
+}
+
+.draggable-parent {
+  display: inline-block;
+}
+
+.draggable {
+  touch-action: none;
+  user-select: none;
+}
+
+.drag-drop {
+  touch-action: none;
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+/* why between cells there is a empty space? */
+
+.playground {
+  /* margin: 0 auto; */
+  /* width: 810px; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  /* width: 1210px; */
+  /* height: 1210px; */
+  margin-top: 50px;
+}
+
+.libra {
+  /* width: 1200px; */
+  /* height: 600px; */
+  /* background-color: aqua; */
+  display: inline-block;
+  height: 700px;
+  width: 675px;
+  /* margin: 0; */
+  /* margin-right: 100px; */
+}
+
+.cups-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.cup-container {
+  display: inline-block;
+  margin-right: 70px;
+
+  /* flex-direction: column; */
+}
+
+.images-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+/* CUP ONE */
+
+.cup-container > .images-container {
+  transform: translateY(70px);
+}
+
+.images-container img:last-child {
+  transform: translateY(-70px);
+}
+
+.another-cup-container {
+  display: inline-block;
+  /* margin-left: 30px; */
+  /* flex-direction: column; */
+  /* width: 300px; */
+}
+
+.cup-container img {
+  width: 300px;
+  display: inline-block;
+}
+
+/* CUP TWO */
+.another-cup-container img {
+  width: 300px;
+  transform: scale(-1, 1) translateY(-70px) !important;
+}
+
+#left,
+#right {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0, 1.96, 1, 0.69);
+  transition-duration: 1s;
+}
+
+#dropzone {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0, 1.96, 1, 0.69);
+  transition-duration: 1s;
+  /* background-color: burlywood; */
+  width: 265px;
+  height: 300px;
+  margin-left: 30px;
+}
+
+.draggable-animated {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0, 1.96, 1, 0.69);
+  transition-duration: 1s;
+}
+
+.platform-container {
+  position: relative;
+}
+
+.platform-container img {
+  width: 580px;
+  transform: translate(45px, -100px);
+  z-index: 1;
+}
+
+.dumbbells-container {
+  width: 600px;
+  height: 600px;
+  /* background-color: bisque; */
+  display: inline-block;
+  margin: 0;
+  margin-left: 200px;
+}
+
+.one img {
+  z-index: 4;
+  position: relative;
+}
+
+.two img {
+  z-index: 3;
+  position: relative;
+}
+
+.three img {
+  z-index: 2;
+  position: relative;
+}
