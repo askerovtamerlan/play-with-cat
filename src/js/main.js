@@ -178,7 +178,7 @@ interact(".draggable")
     // resistance: 100,
     // maxSpeed: 100,
   })
-  .autoScroll(true)
+  .autoScroll(false)
 
   .restrict({
     drag: null,
