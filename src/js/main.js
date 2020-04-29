@@ -146,9 +146,9 @@ interact("#dropzone").dropzone({
     event.relatedTarget.classList.add("draggable-animated");
 
     // console.log(delta);
-    let yDumbbel = (delta / 1000) * 14;
+    let yDumbbel = (delta / 1000) * 13.5;
     delta = 0;
-    let yDropZone = (weigth / 1000) * 14;
+    let yDropZone = (weigth / 1000) * 13.5;
     let yLeft = 70 - 1 * yDropZone;
 
     // console.log(y);

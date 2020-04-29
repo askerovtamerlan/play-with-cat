@@ -48,15 +48,17 @@
   /* margin-right: 100px; */
 }
 
-.cups-container {
-  display: flex;
-  flex-direction: row;
-  width: 670px;
+.cups-containers {
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* flex-wrap: nowrap; */
+  width: 675px;
 }
 
 .cup-container {
   display: inline-block;
   margin-right: 70px;
+  width: 300px;
 
   /* flex-direction: column; */
 }
@@ -82,7 +84,7 @@
   display: inline-block;
   /* margin-left: 30px; */
   /* flex-direction: column; */
-  /* width: 300px; */
+  width: 300px;
 }
 
 .cup-container img {
